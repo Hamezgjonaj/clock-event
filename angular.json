@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "clock-event:build:production",
+            "firebaseProject": "clock-event",
+            "firebaseHostingSite": "clock-event"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "38b3d204-dd1e-44f9-a2f4-c20546d31d61"
   }
 }

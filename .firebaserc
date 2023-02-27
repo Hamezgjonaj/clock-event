@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "clock-event": {
+      "hosting": {
+        "clock-event": [
+          "clock-event"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "clock-event"
+  }
+}

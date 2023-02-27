@@ -1,0 +1,61 @@
+.pomodoro-clock
+  background-color: #685c10
+  width: 445px
+  margin: 0 auto
+  padding: 30px 30px 40px 30px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.increment,
+.decrement,
+.clock-button
+  border: none
+  color: white
+  background-color: #403233
+  padding: 1rem
+  &:hover,
+  :focus
+    background-color: lighten(#403233, 10%)
+
+.increment,
+.decrement
+  border-radius: 50%
+  margin-left: 15px
+  margin-right: 15px
+
+.label,
+.label-number
+  text-align: center
+
+.label-number
+  font-family: 'Digital 7 Regular'
+  font-size: 1.5rem
+
+.clock
+  text-align: center
+  background-color: rgb(128 128 128 / 70%)
+  padding: 10px
+
+.clock-display
+  font-family: 'Digital 7 Regular'
+  font-size: 2rem
+  color: white
+  background-color: #403233
+  padding: 5px 0 10px 0
+
+.clock-start
+  display: flex
+
+@media screen and (max-width: 520px)
+  .pomodoro-clock
+    width: auto
+    flex-direction: column
+
+  .clock,
+  .session
+    margin-top: 20px
+
+  .clock-display
+    max-width: 200px
+    margin: 10px auto
